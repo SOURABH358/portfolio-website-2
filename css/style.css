@@ -433,7 +433,8 @@ main .hero__section article .hero__para {
 }
 
 .project__section {
-  padding: 10rem 5%;
+  width: 100%;
+  padding: 10rem 12%;
 }
 @media screen and (max-width: 601px) {
   .project__section {
@@ -443,12 +444,149 @@ main .hero__section article .hero__para {
 .project__section h2 {
   font-size: 2rem;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .project__section .project__container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
+}
+.project__section .project__container .project {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.project__section .project__container .project::before {
+  position: absolute;
+  top: 0.5rem;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #808080;
+}
+.project__section .project__container .project::after {
+  position: absolute;
+  bottom: 1.5rem;
+  z-index: -1;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #808080;
+}
+.project__section .project__container .project img {
+  width: 100%;
+  border-radius: 0.4rem;
+  border-top: 3rem solid #C0C0C0;
+  border-bottom: 3rem solid #C0C0C0;
+  border-left: 1.5rem solid #C0C0C0;
+  border-right: 1.5rem solid #C0C0C0;
+}
+.project__section .project__container .project img:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 601px) {
+  .project__section .project__container .project {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .project__section .project__container .project img {
+    border-radius: 1rem;
+    border-top: 2.5rem solid #C0C0C0;
+    border-bottom: 0.5rem solid #C0C0C0;
+    border-left: 0.5rem solid #C0C0C0;
+    border-right: 0.5rem solid #C0C0C0;
+  }
+  .project__section .project__container .project img:nth-child(1) {
+    display: none;
+  }
+  .project__section .project__container .project img:nth-child(2) {
+    display: block;
+  }
+  .project__section .project__container .project::after {
+    top: 8rem;
+    left: 100%;
+    width: 0.5rem;
+    height: 4rem;
+    background-color: #C0C0C0;
+  }
+}
+.project__section .project__container .project .layover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.project__section .project__container .project:hover .layover {
+  display: block;
+}
+.project__section .project__container .project .project__info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  padding-top: 10rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media screen and (max-width: 601px) {
+  .project__section .project__container .project .project__info {
+    padding-top: 2rem;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+.project__section .project__container .project .project__info .project__links {
+  font-size: 2rem;
+}
+@media screen and (max-width: 601px) {
+  .project__section .project__container .project .project__info .project__links {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .project__section .project__container .project .project__info .project__links img {
+    width: 1rem;
+  }
+}
+.project__section .project__container .project .project__info .project__links span {
+  margin-right: 2rem;
+}
+.project__section .project__container .project .project__info .project__links img {
+  width: 2rem;
+  border: none;
+  display: inline-block;
+}
+.project__section .project__container .project:hover .project__info {
+  display: flex;
+}
+.project__section .project__container .project h3,
+.project__section .project__container .project h4 {
+  padding: 0 5rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 601px) {
+  .project__section .project__container .project h3,
+.project__section .project__container .project h4 {
+    padding: 0;
+  }
+}
+.project__section .project__container .project h3 {
+  font-size: 1.5rem;
 }
 
 *, *::before, *::after {
@@ -472,6 +610,7 @@ body {
   background: url("/assets/background-desktop.jpg");
   background-attachment: fixed;
   width: 100%;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 601px) {
   body {
@@ -480,6 +619,5 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -344,7 +344,7 @@ main .hero__section article .hero__para {
   width: 20rem;
 }
 .about__section .about__container .about__info {
-  text-align: center;
+  text-align: left;
 }
 .about__section .about__container .about__info p {
   padding: 1rem 0;
@@ -358,11 +358,14 @@ main .hero__section article .hero__para {
 .about__section .about__container .about__info .tech__stack img {
   height: 3rem;
 }
-.about__section .about__container .about__info .social {
+.about__section .about__container .about__info .social__section {
+  margin-top: 2rem;
+}
+.about__section .about__container .about__info .social__section .social {
   display: inline;
   margin: 0 1rem;
 }
-.about__section .about__container .about__info .social img {
+.about__section .about__container .about__info .social__section .social img {
   background: white;
   border-radius: 50%;
   padding: 1rem;
@@ -378,6 +381,17 @@ main .hero__section article .hero__para {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+
+.work__section .work__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 10%;
+}
+@media screen and (max-width: 601px) {
+  .work__section .work__container {
+    padding: 10rem 2rem;
+  }
 }
 
 *, *::before, *::after {

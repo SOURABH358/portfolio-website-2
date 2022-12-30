@@ -1,0 +1,10 @@
+.work__section{
+    .work__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem 10%;
+        @media screen and (max-width:601px) {
+            padding: 10rem 2rem;
+        }
+    }
+}

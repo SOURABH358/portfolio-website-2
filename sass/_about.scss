@@ -21,7 +21,7 @@
             }
         }
         .about__info{
-            text-align: center;
+            text-align: left;
             p{
                 padding: 1rem 0;
             }
@@ -34,13 +34,16 @@
                     height: 3rem;
                 }
             }
-            .social{
-                display: inline;
-                margin: 0 1rem;
-                img{
-                    background: white;
-                    border-radius: 50%;
-                    padding: 1rem;
+            .social__section{
+                margin-top: 2rem;
+                .social{
+                    display: inline;
+                    margin: 0 1rem;
+                    img{
+                        background: white;
+                        border-radius: 50%;
+                        padding: 1rem;
+                    }
                 }
             }
         }

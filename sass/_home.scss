@@ -42,7 +42,8 @@ $light-blue: #ADE8E6;
     z-index: 2;
 
     .logo {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
+        color: #ADE8E6;
     }
 
     .menu {
@@ -80,7 +81,7 @@ $light-blue: #ADE8E6;
             &:hover {
                 border: 2px solid white;
                 border-radius: 0.5rem;
-                background: $dark-blue;
+                background: transparent;
             }
 
         }

@@ -1,6 +1,7 @@
 @use 'home';
 @use 'about';
 @use 'work';
+@use 'project';
 *,*::before,*::after{
     color: white;
     box-sizing: border-box;

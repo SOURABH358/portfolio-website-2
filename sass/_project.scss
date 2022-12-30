@@ -1,0 +1,16 @@
+$silver-grey: #C0C0C0;
+.project__section{
+    padding: 10rem 5%;
+    @media screen and (max-width: 601px ) {
+        padding: 5rem 2rem;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    .project__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 4rem;
+    }
+}

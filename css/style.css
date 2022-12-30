@@ -432,6 +432,25 @@ main .hero__section article .hero__para {
   width: 100%;
 }
 
+.project__section {
+  padding: 10rem 5%;
+}
+@media screen and (max-width: 601px) {
+  .project__section {
+    padding: 5rem 2rem;
+  }
+}
+.project__section h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.project__section .project__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
 *, *::before, *::after {
   color: white;
   box-sizing: border-box;

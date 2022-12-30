@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   align-items: center;
   position: fixed;
   top: 0;
@@ -11,9 +11,30 @@
 .navbar .logo {
   font-size: 1.75rem;
 }
+.navbar .menu {
+  display: none;
+  width: 2rem;
+  cursor: pointer;
+}
+.navbar .menu img {
+  width: 100%;
+}
+@media screen and (max-width: 601px) {
+  .navbar .menu {
+    display: block;
+  }
+}
 .navbar .navLinks {
   display: flex;
   gap: 2rem;
+}
+.navbar .navLinks .close {
+  display: none;
+  width: 2rem;
+  cursor: pointer;
+}
+.navbar .navLinks .close img {
+  width: 100%;
 }
 .navbar .navLinks a {
   padding: 1rem;
@@ -37,6 +58,12 @@
     padding: 2rem 1rem;
     gap: 4rem;
   }
+  .navbar .navLinks .close {
+    display: block;
+  }
+}
+.navbar .show {
+  right: 0;
 }
 
 .scrollNav {
@@ -62,15 +89,22 @@ main .hero__section {
 }
 main .hero__section article .hero__sub__title {
   padding: 2rem 0;
+  font-size: 1.25rem;
+}
+main .hero__section article .hero__sub__title span {
+  color: #ADE8E6;
 }
 main .hero__section article .hero__main__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 5rem;
 }
 @media screen and (max-width: 601px) {
   main .hero__section article .hero__main__title {
     padding: 0;
   }
+}
+main .hero__section article .hero__main__title span {
+  color: #ADE8E6;
 }
 main .hero__section article .hero__para {
   position: relative;
@@ -385,6 +419,7 @@ main .hero__section article .hero__para {
 
 .work__section {
   padding: 10rem 10%;
+  position: relative;
 }
 .work__section h2 {
   font-size: 2rem;
@@ -405,8 +440,8 @@ main .hero__section article .hero__para {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 @media screen and (max-width: 601px) {
   .work__section .work__container {
@@ -418,9 +453,15 @@ main .hero__section article .hero__para {
   padding: 1rem 0;
   line-height: 1.5rem;
 }
+.work__section .work__container .work__info p {
+  text-align: right;
+}
 @media screen and (max-width: 601px) {
   .work__section .work__container .work__info {
     order: 2;
+  }
+  .work__section .work__container .work__info p {
+    text-align: left;
   }
 }
 @media screen and (max-width: 601px) {
@@ -432,9 +473,39 @@ main .hero__section article .hero__para {
   width: 100%;
 }
 
+.cloud__2 {
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  width: 30rem;
+  z-index: -1;
+}
+.cloud__2 img {
+  width: 100%;
+}
+
+.cloud__3 {
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  z-index: -1;
+  width: 50rem;
+}
+.cloud__3 img {
+  width: 100%;
+}
+@media screen and (max-width: 601px) {
+  .cloud__3 {
+    top: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .project__section {
   width: 100%;
   padding: 10rem 12%;
+  position: relative;
 }
 @media screen and (max-width: 601px) {
   .project__section {
@@ -588,6 +659,45 @@ main .hero__section article .hero__para {
   font-size: 1.5rem;
 }
 
+.cloud__4 {
+  position: absolute;
+  top: -20rem;
+  left: 0;
+  z-index: -1;
+}
+
+.cloud__5 {
+  position: absolute;
+  top: -30rem;
+  left: 40rem;
+  z-index: -1;
+}
+
+.cloud__6 {
+  position: absolute;
+  top: 30rem;
+  left: 90rem;
+  z-index: -1;
+}
+
+.cloud__7 {
+  position: absolute;
+  top: 45rem;
+  left: 30rem;
+  z-index: -1;
+}
+
+.moon {
+  position: absolute;
+  top: -5rem;
+  left: 35%;
+  width: 10rem;
+  z-index: -1;
+}
+.moon img {
+  width: 100%;
+}
+
 *, *::before, *::after {
   color: white;
   box-sizing: border-box;
@@ -619,4 +729,10 @@ body {
     background-position: center;
     background-size: cover;
   }
+}
+
+.footer__section p {
+  padding: 1.5rem 0;
+  background: #00003f;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

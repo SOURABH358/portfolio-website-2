@@ -1,5 +1,6 @@
 .work__section{
     padding: 10rem 10%;
+    position: relative;
     h2{
         font-size: 2rem;
         text-align: center;
@@ -15,7 +16,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        column-gap: 2rem;
+        column-gap: 4rem;
         @media screen and (max-width:601px) {
             grid-template-columns: 1fr;
             row-gap: 4rem;
@@ -25,8 +26,14 @@
             line-height: 1.5rem;
         }
         .work__info{
+            p{
+                text-align: right;
+            }
             @media screen and (max-width: 601px) {
                 order: 2;
+                p{
+                    text-align: left;
+                }
             }
         }
         .work__logo{
@@ -37,5 +44,30 @@
                 width: 100%;
             }
         }
+    }
+}
+.cloud__2{
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    width: 30rem;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+.cloud__3{
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    z-index: -1;
+    width: 50rem;
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width:601px) {
+        top:30rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

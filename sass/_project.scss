@@ -4,6 +4,7 @@ $silver-grey: #C0C0C0;
 .project__section {
     width: 100%;
     padding: 10rem 12%;
+    position: relative;
 
     @media screen and (max-width: 601px) {
         padding: 5rem 2rem;
@@ -172,3 +173,37 @@ $silver-grey: #C0C0C0;
     }
 }
 
+.cloud__4{
+    position: absolute;
+    top:-20rem;
+    left: 0;
+    z-index: -1;
+}
+.cloud__5{
+    position: absolute;
+    top:-30rem;
+    left: 40rem;
+    z-index: -1;
+}
+.cloud__6{
+    position: absolute;
+    top:30rem;
+    left: 90rem;
+    z-index: -1;
+}
+.cloud__7{
+    position: absolute;
+    top:45rem;
+    left: 30rem;
+    z-index: -1;
+}
+.moon{
+    position: absolute;
+    top: -5rem;
+    left: 35%;
+    width: 10rem;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}

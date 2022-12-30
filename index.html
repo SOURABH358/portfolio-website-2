@@ -9,15 +9,17 @@
 </head>
 
 <body>
-  <header>
+  <header id="#home">
     <nav id="navbar" class="navbar">
       <p class="logo">SY</p>
+      <div class="menu"><img src="/public/assets/menu.png" alt="menu"/></div>
       <ul class="navLinks">
+        <div class="close"><img src="/public/assets/close.png" alt="close"/></div>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/1l8v1nQWfwE0kGZ7bE2o1BLyQWW7evTDQ/view?usp=share_link">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -75,7 +77,9 @@
       </section>
       <div class="cloud__1"><img src="/assets/cloud__1.png" alt="cloud" /></div>
     </section>
-    <section class="work__section">
+    <section id="work" class="work__section">
+      <div class="cloud__2"><img src="/assets/cloud__1.png" alt="cloud" /></div>
+      <div class="cloud__3"><img src="/assets/cloud__1.png" alt="cloud" /></div>
       <h2>Work</h2>
       <section class="work__container">
         <article class="work__info">
@@ -96,21 +100,26 @@
         </article>
       </section>
     </section>
-    <section class="project__section">
+    <section id="projects" class="project__section">
+      <div class="moon"><img src="/public/assets/moon.png" alt="moon"/></div>
+      <div class="cloud__4"><img src="/assets/cloud__1.png" alt="cloud" /></div>
+      <div class="cloud__5"><img src="/assets/cloud__1.png" alt="cloud" /></div>
+      <div class="cloud__6"><img src="/assets/cloud__1.png" alt="cloud" /></div>
+      <div class="cloud__7"><img src="/assets/cloud__1.png" alt="cloud" /></div>
       <h2>Projects</h2>
       <section class="project__container">
         <article class="project">
-          <img src="/public/assets/projects/project__1__1.jpg" alt="project-1"/>
-          <img src="/public/assets/projects/project__1__2.jpg" alt="project-1"/>
+          <img src="/assets/projects/project__1__1.jpg" alt="project-1"/>
+          <img src="/assets/projects/project__1__2.jpg" alt="project-1"/>
           <div class="layover"></div>
           <div class="project__info">
             <p class="project__links">
               <a href="https://playful-longma-269c15.netlify.app/">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Code</span>
               </a>
               <a href="https://playful-longma-269c15.netlify.app/">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Demo</span>
               </a>
             </p>
@@ -122,74 +131,77 @@
           </div>
         </article>
         <article class="project">
-          <img src="/public/assets/projects/project__2__1.jpg" alt="project-2"/>
-          <img src="/public/assets/projects/project__2__2.jpg" alt="project-2"/>
+          <img src="/assets/projects/project__2__1.jpg" alt="project-2"/>
+          <img src="/assets/projects/project__2__2.jpg" alt="project-2"/>
           <div class="layover"></div>
           <div class="project__info">
             <p class="project__links">
               <a href="https://github.com/SOURABH358/Chat-Application">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Code</span>
               </a>
               <a href="https://strong-lollipop-0d4856.netlify.app/">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Demo</span>
               </a>
             </p>
             <p>
               <h3>Chat Application</h3>
-              <h4>A fully responsive full stack Ecommerce Application built using ReactJS and beautifully styled with Tailwind CSS. It has google authentication, with complete functionality of cart ,selecting and ordering a product, the app is  uses Firebase as backend to store all the user related data.</h4>
-              <h4>ReactJs | Tailwind CSS | Firebase</h4>
+              <h4>A full stack chat Application created using React and beautifully styled with SCSS. It covers authentication, maintaining users chats, user info with realtime chatting, everything managed using Firebase </h4>
+              <h4>ReactJs | CSS | Firebase</h4>
             </p>
           </div>
         </article>
         <article class="project">
-          <img src="/public/assets/projects/project__3__1.jpg" alt="project-3"/>
-          <img src="/public/assets/projects/project__3__2.jpg" alt="project-3"/>
+          <img src="/assets/projects/project__3__1.jpg" alt="project-3"/>
+          <img src="/assets/projects/project__3__2.jpg" alt="project-3"/>
           <div class="layover"></div>
           <div class="project__info">
             <p class="project__links">
               <a href="https://github.com/SOURABH358/netflix-clone">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Code</span>
               </a>
               <a href="https://animated-gaufre-45ae75.netlify.app/">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Demo</span>
               </a>
             </p>
             <p>
               <h3>Netflix Clone</h3>
-              <h4>A fully responsive full stack Ecommerce Application built using ReactJS and beautifully styled with Tailwind CSS. It has google authentication, with complete functionality of cart ,selecting and ordering a product, the app is  uses Firebase as backend to store all the user related data.</h4>
-              <h4>ReactJs | Tailwind CSS | Firebase</h4>
+              <h4>A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.</h4>
+              <h4>ReactJs | CSS | Material UI</h4>
             </p>
           </div>
         </article>
         <article class="project">
-          <img src="/public/assets/projects/project__4__1.jpg" alt="project-4"/>
-          <img src="/public/assets/projects/project__4__2.jpg" alt="project-4"/>
+          <img src="/assets/projects/project__4__1.jpg" alt="project-4"/>
+          <img src="/assets/projects/project__4__2.jpg" alt="project-4"/>
           <div class="layover"></div>
           <div class="project__info">
             <p class="project__links">
               <a href="https://github.com/SOURABH358/crypto-dashboard">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Code</span>
               </a>
               <a href="https://unrivaled-cuchufli-9ec2b2.netlify.app/">
-                <img src="/public/assets/link.png" alt="link"/>
+                <img src="/assets/link.png" alt="link"/>
                 <span>Demo</span>
               </a>
             </p>
             <p>
               <h3>Crypto Dashboard</h3>
-              <h4>A fully responsive full stack Ecommerce Application built using ReactJS and beautifully styled with Tailwind CSS. It has google authentication, with complete functionality of cart ,selecting and ordering a product, the app is  uses Firebase as backend to store all the user related data.</h4>
-              <h4>ReactJs | Tailwind CSS | Firebase</h4>
+              <h4>A fully responsive Crypto Dashboard built using ReactJs, and Tailwind CSS. The project utilizes an API for data fetching, and displays it using charts.</h4>
+              <h4>ReactJs | Tailwind CSS | API</h4>
             </p>
           </div>
         </article>
       </section>
     </section>
   </main>
+  <footer class="footer__section">
+    <p>Made with ❤ by Sourabh Yadav</p>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 

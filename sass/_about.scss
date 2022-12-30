@@ -1,5 +1,5 @@
 .about__section{
-    padding: 4rem 10%;
+    padding: 10rem 10%;
     position: relative;
     @media screen and (max-width: 601px) {
         padding: 10rem 2rem;
@@ -59,4 +59,5 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+   
 }

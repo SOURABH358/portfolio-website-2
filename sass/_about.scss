@@ -1,0 +1,59 @@
+.about__section{
+    padding: 4rem 10%;
+    position: relative;
+    @media screen and (max-width: 601px) {
+        padding: 10rem 2rem;
+        
+    }
+    .about__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 4rem;
+        @media screen and (max-width: 601px) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        .avatar {
+            img{
+                width: 20rem;
+            }
+        }
+        .about__info{
+            text-align: center;
+            p{
+                padding: 1rem 0;
+            }
+            .tech__stack{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 4rem;
+                img{
+                    height: 3rem;
+                }
+            }
+            .social{
+                display: inline;
+                margin: 0 1rem;
+                img{
+                    background: white;
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+.cloud__1{
+    position: absolute;
+    top:-10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}

@@ -450,8 +450,7 @@ main .hero__section article .hero__para {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+  row-gap: 6rem;
 }
 .project__section .project__container .project {
   width: 100%;

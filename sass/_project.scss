@@ -4,6 +4,7 @@ $dark-blue: #00003f;
 .project__section {
     width: 100%;
     padding: 10rem 12%;
+    padding-bottom: 5rem;
     position: relative;
 
     @media screen and (max-width: 601px) {
@@ -226,6 +227,11 @@ $dark-blue: #00003f;
     min-height: 100vh;
     display: none;
     position: relative;
+    .close__work{
+        position: absolute;
+        right:5%;
+        top: 5rem;
+    }
     h2{
         text-align: center;
         margin-bottom: 2rem;

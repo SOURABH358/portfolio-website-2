@@ -508,6 +508,7 @@ main .hero__section article .hero__para {
 .project__section {
   width: 100%;
   padding: 10rem 12%;
+  padding-bottom: 5rem;
   position: relative;
 }
 @media screen and (max-width: 601px) {
@@ -720,6 +721,11 @@ main .hero__section article .hero__para {
   min-height: 100vh;
   display: none;
   position: relative;
+}
+.more__work__section .close__work {
+  position: absolute;
+  right: 5%;
+  top: 5rem;
 }
 .more__work__section h2 {
   text-align: center;

@@ -674,6 +674,12 @@ main .hero__section article .hero__para {
   margin: 0 42%;
   margin-top: 4rem;
 }
+@media screen and (max-width: 601px) {
+  .project__section .more__work__btn {
+    margin: 0 31%;
+    margin-top: 4rem;
+  }
+}
 
 .cloud__4 {
   position: absolute;

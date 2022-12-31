@@ -183,6 +183,10 @@ $dark-blue: #00003f;
         font-size: 1.25rem;
         margin: 0 42%;
         margin-top: 4rem;
+        @media screen and (max-width:601px){
+            margin:0 31%;
+            margin-top: 4rem;
+        }
     }
 }
 
@@ -219,6 +223,7 @@ $dark-blue: #00003f;
     img{
         width: 100%;
     }
+    
 }
 
 .more__work__section{

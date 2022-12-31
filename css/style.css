@@ -709,6 +709,47 @@ main .hero__section article .hero__para {
   width: 100%;
 }
 
+.more__work__section {
+  width: 100%;
+  background-color: rgba(244, 244, 244, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 5rem 5%;
+  min-height: 100vh;
+}
+.more__work__section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.more__work__section .more__work__container {
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.more__work__section .more__work__container .work:nth-child(1) {
+  grid-column: 1/4;
+}
+.more__work__section .more__work__container .work:nth-child(5) {
+  grid-column: 1/2;
+}
+.more__work__section .more__work__container .work:nth-child(6) {
+  grid-column: 2/5;
+}
+.more__work__section .more__work__container .work:nth-child(3) {
+  grid-column: 1/3;
+}
+.more__work__section .more__work__container .work:nth-child(4) {
+  grid-column: 3/5;
+}
+.more__work__section .more__work__container .work img {
+  width: 100%;
+  height: 100%;
+}
+
+.show__more__work {
+  display: block;
+}
+
 *, *::before, *::after {
   color: white;
   box-sizing: border-box;

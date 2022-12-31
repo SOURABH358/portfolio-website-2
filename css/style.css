@@ -751,9 +751,45 @@ main .hero__section article .hero__para {
 .more__work__section .more__work__container .work:nth-child(4) {
   grid-column: 3/5;
 }
+.more__work__section .more__work__container .work {
+  position: relative;
+}
 .more__work__section .more__work__container .work img {
   width: 100%;
   height: 100%;
+}
+.more__work__section .more__work__container .work .work__layover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.more__work__section .more__work__container .work .work__layover p {
+  font-size: 2rem;
+  align-self: flex-start;
+  text-align: center;
+}
+.more__work__section .more__work__container .work .work__layover .work__links {
+  align-self: center;
+}
+.more__work__section .more__work__container .work .work__layover .work__links a {
+  display: inline;
+  margin-right: 1rem;
+}
+.more__work__section .more__work__container .work .work__layover .work__links a img {
+  width: 2rem;
+}
+.more__work__section .more__work__container .work .work__layover .work__links span {
+  font-size: 1rem;
+}
+.more__work__section .more__work__container .work:hover .work__layover {
+  display: grid;
 }
 
 .show__more__work {

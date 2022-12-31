@@ -531,6 +531,7 @@ main .hero__section article .hero__para {
   width: 100%;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .project__section .project__container .project::before {
   position: absolute;
@@ -593,22 +594,22 @@ main .hero__section article .hero__para {
   }
 }
 .project__section .project__container .project .layover {
-  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   border-radius: 0.4rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 63, 0.8);
+  transition: 0.5s ease-in-out;
 }
 .project__section .project__container .project:hover .layover {
-  display: block;
+  top: 0;
 }
 .project__section .project__container .project .project__info {
-  display: none;
+  display: flex;
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   width: 100%;
   padding: 0 2rem;
@@ -616,6 +617,7 @@ main .hero__section article .hero__para {
   align-items: center;
   flex-direction: column;
   gap: 4rem;
+  transition: 0.5s ease-in-out;
 }
 @media screen and (max-width: 601px) {
   .project__section .project__container .project .project__info {
@@ -645,7 +647,7 @@ main .hero__section article .hero__para {
   display: inline-block;
 }
 .project__section .project__container .project:hover .project__info {
-  display: flex;
+  top: 0;
 }
 .project__section .project__container .project h3,
 .project__section .project__container .project h4 {
@@ -753,6 +755,7 @@ main .hero__section article .hero__para {
 }
 .more__work__section .more__work__container .work {
   position: relative;
+  overflow: hidden;
 }
 .more__work__section .more__work__container .work img {
   width: 100%;
@@ -760,15 +763,16 @@ main .hero__section article .hero__para {
 }
 .more__work__section .more__work__container .work .work__layover {
   position: absolute;
-  top: 0;
+  top: 100%;
   width: 100%;
   left: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  background-color: rgba(0, 0, 63, 0.8);
+  display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  transition: 0.5s ease-in-out;
 }
 .more__work__section .more__work__container .work .work__layover p {
   font-size: 2rem;
@@ -789,7 +793,7 @@ main .hero__section article .hero__para {
   font-size: 1rem;
 }
 .more__work__section .more__work__container .work:hover .work__layover {
-  display: grid;
+  top: 0;
 }
 
 .show__more__work {

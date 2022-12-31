@@ -1,5 +1,5 @@
 $silver-grey: #C0C0C0;
-
+$dark-blue: #00003f;
 // $silver-grey: #404040;
 .project__section {
     width: 100%;
@@ -170,6 +170,16 @@ $silver-grey: #C0C0C0;
                 font-size: 1.5rem;
             }
         }
+    }
+    .more__work__btn{
+        width: 10rem;
+        background-color: $dark-blue;
+        height: 4rem;
+        border-radius: 0.5rem;
+        border:none;
+        font-size: 1.25rem;
+        margin: 0 42%;
+        margin-top: 4rem;
     }
 }
 

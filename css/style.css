@@ -68,7 +68,9 @@
 }
 
 .scrollNav {
-  background: #00003f;
+  background: rgba(0, 0, 63, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 main .hero__section {
@@ -716,6 +718,8 @@ main .hero__section article .hero__para {
           backdrop-filter: blur(10px);
   padding: 5rem 5%;
   min-height: 100vh;
+  display: none;
+  position: relative;
 }
 .more__work__section h2 {
   text-align: center;

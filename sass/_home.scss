@@ -108,7 +108,8 @@ $light-blue: #ADE8E6;
 }
 
 .scrollNav {
-    background: $dark-blue;
+    background: rgba(0, 0, 63,0.4);
+    backdrop-filter: blur(10px);
 }
 
 main {

@@ -19,5 +19,5 @@ close.addEventListener('click',()=>{
 })
 
 moreWork.addEventListener('click',()=>{
-
+    moreWorkSection.classList.toggle('show__more__work')
 })

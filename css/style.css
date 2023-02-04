@@ -619,6 +619,11 @@ main .hero__section article .hero__para {
   gap: 4rem;
   transition: 0.5s ease-in-out;
 }
+.project__section .project__container .project .project__info .demo__info {
+  position: absolute;
+  top: 11rem;
+  right: 27%;
+}
 @media screen and (max-width: 601px) {
   .project__section .project__container .project .project__info {
     padding-top: 2rem;
@@ -791,6 +796,7 @@ main .hero__section article .hero__para {
 .more__work__section .more__work__container .work .work__layover .work__links a {
   display: inline;
   margin-right: 1rem;
+  position: relative;
 }
 .more__work__section .more__work__container .work .work__layover .work__links a img {
   width: 2rem;

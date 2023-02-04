@@ -127,7 +127,11 @@ $dark-blue: #00003f;
                 flex-direction: column;
                 gap: 4rem;
                 transition: 0.5s ease-in-out;
-
+                .demo__info{
+                    position: absolute;
+                    top:11rem;
+                    right: 27%;
+            }
                 @media screen and (max-width:601px) {
                     padding-top: 2rem;
                     gap: 2rem;
@@ -135,7 +139,7 @@ $dark-blue: #00003f;
                 }
                 .project__links {
                     font-size: 2rem;
-
+                        
                     @media screen and (max-width:601px) {
                         margin: 0;
                         font-size: 1rem;
@@ -152,6 +156,7 @@ $dark-blue: #00003f;
                         border: none;
                         display: inline-block;
                     }
+                    
                 }
             }
 
@@ -294,6 +299,7 @@ $dark-blue: #00003f;
                     a{
                         display: inline;
                         margin-right: 1rem;
+                        position: relative;
                         img{
                             width: 2rem;
                         }
@@ -301,7 +307,9 @@ $dark-blue: #00003f;
                     span{
                         font-size: 1rem;
                     }
+                    
                 }
+                
             }
             &:hover .work__layover{
                 top:0;

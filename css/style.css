@@ -622,7 +622,8 @@ main .hero__section article .hero__para {
 .project__section .project__container .project .project__info .demo__info {
   position: absolute;
   top: 11rem;
-  right: 27%;
+  right: 28%;
+  font-size: 0.8rem;
 }
 @media screen and (max-width: 601px) {
   .project__section .project__container .project .project__info {

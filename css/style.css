@@ -631,6 +631,10 @@ main .hero__section article .hero__para {
     gap: 2rem;
     text-align: center;
   }
+  .project__section .project__container .project .project__info .demo__info {
+    top: 5rem;
+    right: 10%;
+  }
 }
 .project__section .project__container .project .project__info .project__links {
   font-size: 2rem;
